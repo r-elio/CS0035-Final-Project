@@ -50,7 +50,6 @@ public class LoginFrame extends JFrame { // the class inherits the JFrame class
 	private JButton loginButton;
 	private MenuBar menuBar;
 	private Menu aboutMenu;
-	private Menu settingMenu;
 	private Menu languageMenu;
 	private MenuItem aboutATM;
 	private MenuItem aboutUs;
@@ -82,7 +81,6 @@ public class LoginFrame extends JFrame { // the class inherits the JFrame class
 		menuBar = new MenuBar();
 		
 		aboutMenu = new Menu(lang.login.get("aboutMenu"));
-		settingMenu = new Menu(lang.login.get("settingMenu"));
 		languageMenu = new Menu(lang.login.get("languageMenu"));
 		
 		aboutATM = new MenuItem(lang.login.get("aboutATM"));
@@ -119,10 +117,8 @@ public class LoginFrame extends JFrame { // the class inherits the JFrame class
 		languageMenu.add(english);
 		languageMenu.add(tagalog);
 		
-		settingMenu.add(languageMenu);
-		
 		menuBar.add(aboutMenu);
-		menuBar.add(settingMenu);
+		menuBar.add(languageMenu);
 		
 		setMenuBar(menuBar);
 		
