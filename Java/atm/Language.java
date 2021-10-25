@@ -188,7 +188,7 @@ public class Language implements Serializable {
 		login.put("aboutATMMessage1","Automated Teller Machine\nTagapangasiwa: ");
 		login.put("aboutATMMessage2","\n-Magdagdag/Magtanggal/Mag-update ng mga Account ");
 		login.put("aboutATMMessage3","\n-Magpasok/Magluwas/Magdugtong ng mga Account ");
-		login.put("aboutUsMessage","Ginawa nina: \nRajan Elio at James De Leon\nBSCSSE - N21 \n");
+		login.put("aboutUsMessage","Ginawa nina: \nRajan Elio, Mark Egana,\nJames De Leon, at Agerico Reyes\nBSCSSE - TN41 \n");
 		login.put("languageMessage","Papalitan ang Wika. \nBuksan muli ang system.");
 		login.put("languageTitle","Palitan ang Wika");
 		admin.put("title","Tagapangasiwa");
