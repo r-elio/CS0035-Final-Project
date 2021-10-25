@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [LoginController::class, 'index'])->name('login');
+Route::redirect('/','/en');
+
+Route::group(['prefix' => '{language}'], function () {
+    Route::get('/', [LoginController::class, 'index'])->name('login');
+});

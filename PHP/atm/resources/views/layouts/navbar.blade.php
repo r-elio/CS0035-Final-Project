@@ -7,23 +7,54 @@
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About
+                        {{ __('messages.about') }}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">About ATM</a></li>
-                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#about_atm">{{ __('messages.about atm') }}</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#about_us">{{ __('messages.about us') }}</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Language
+                        {{ __('messages.language') }}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">English</a></li>
-                        <li><a class="dropdown-item" href="#">Tagalog</a></li>
+                        <li><a class="dropdown-item @if(App::isLocale('en')) disabled @endif" href="{{ route(Route::currentRouteName(), 'en') }}">{{ __('messages.english') }}</a></li>
+                        <li><a class="dropdown-item @if(App::isLocale('fil')) disabled @endif" href="{{ route(Route::currentRouteName(), 'fil') }}">{{ __('messages.tagalog') }}</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="about_atm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{ __('messages.about atm') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="white-space: pre-line">{{ __('messages.about atm content') }}</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="about_us" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{ __('messages.about us') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="white-space: pre-line">{{ __('messages.about us content') }}</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
