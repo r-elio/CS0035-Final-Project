@@ -3,7 +3,7 @@
 // resources/lang/en/messages.php
 
 return [
-    'welcome' => 'Welcome to our application!',
+    'atm' => 'ATM',
     'about' => 'About',
     'about atm' => 'About ATM',
     'about us' => 'About Us',
@@ -12,4 +12,11 @@ return [
     'language' => 'Language',
     'english' => 'English',
     'tagalog' => 'Tagalog',
+    'login' => 'Login',
+    'account number' => 'Account Number',
+    'pin' => 'PIN',
+    'invalid account' => 'Invalid Account',
+    'invalid account content' => 'Account does not exist.',
+    'logout' => 'Logout',
+    'admin' => 'Admin',
 ];

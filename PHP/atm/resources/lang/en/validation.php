@@ -153,6 +153,9 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'form.account_id' => __('messages.account number'),
+        'form.password' => __('messages.pin'),
+    ],
 
 ];

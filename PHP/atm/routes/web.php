@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\LoginController;
-use Illuminate\Support\Facades\App;
+use App\Http\Controllers\LogoutController;
+use App\Http\Livewire\Admin;
+use App\Http\Livewire\Login;
+use App\Http\Livewire\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/','/en');
+Route::redirect('/','/'. app()->getLocale());
 
 Route::group(['prefix' => '{language}'], function () {
-    Route::get('/', [LoginController::class, 'index'])->name('login');
+    Route::get('/', Login::class)->name('login')->middleware('guest');
+    Route::get('/admin', Admin::class)->name('admin')->middleware(['auth', 'is_admin']);
+    Route::get('/user', User::class)->name('user')->middleware('auth');
+    Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
 });

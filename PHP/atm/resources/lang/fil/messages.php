@@ -3,7 +3,7 @@
 // resources/lang/fil/messages.php
 
 return [
-    'welcome' => 'Maligayang pagdating sa aming application!',
+    'atm' => 'ATM',
     'about' => 'Tungkol',
     'about atm' => 'Tungkol sa ATM',
     'about us' => 'Tungkol sa mga gumawa',
@@ -12,4 +12,11 @@ return [
     'language' => 'Wika',
     'english' => 'Ingles',
     'tagalog' => 'Tagalog',
+    'login' => 'Mag log in',
+    'account number' => 'Account Number',
+    'pin' => 'PIN',
+    'invalid account' => 'Hindi tama ang account',
+    'invalid account content' => 'Walang katugmang account.',
+    'logout' => 'Logout',
+    'admin' => 'Tagapangasiwa',
 ];
