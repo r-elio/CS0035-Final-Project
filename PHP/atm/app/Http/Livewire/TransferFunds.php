@@ -4,13 +4,13 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class User extends Component
+class TransferFunds extends Component
 {
     public function render()
     {
-        return view('livewire.user')
+        return view('livewire.transfer-funds')
             ->extends('layouts.app')
             ->section('content')
-            ->layoutData(['title' => auth()->user()->name]);
+            ->layoutData(['title' => __('messages.transfer funds')]);
     }
 }
