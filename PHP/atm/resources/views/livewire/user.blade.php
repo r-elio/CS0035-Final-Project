@@ -7,26 +7,32 @@
             <div class="row g-5">
                 <div class="col-md-6">
                     <a class="btn btn-outline-light btn-lg" style="width: 100%" role="button"
+                       data-bs-toggle="tooltip" data-bs-placement="right" title="{{ __('messages.tooltip withdraw') }}"
                        href="{{ route('cash-withdrawal', app()->getLocale()) }}">{{ __('messages.cash withdrawal') }}</a>
                 </div>
                 <div class="col-md-6">
                     <a class="btn btn-outline-light btn-lg" style="width: 100%" role="button"
+                       data-bs-toggle="tooltip" data-bs-placement="right" title="{{ __('messages.tooltip deposit') }}"
                        href="{{ route('cash-deposit', app()->getLocale()) }}">{{ __('messages.cash deposit') }}</a>
                 </div>
                 <div class="col-md-6">
                     <a class="btn btn-outline-light btn-lg" style="width: 100%" role="button"
+                       data-bs-toggle="tooltip" data-bs-placement="right" title="{{ __('messages.tooltip transfer') }}"
                        href="{{ route('transfer-funds', app()->getLocale()) }}">{{ __('messages.transfer funds') }}</a>
                 </div>
                 <div class="col-md-6">
                     <a class="btn btn-outline-light btn-lg" style="width: 100%" role="button"
+                       data-bs-toggle="tooltip" data-bs-placement="right" title="{{ __('messages.tooltip balance') }}"
                        href="{{ route('balance-inquiry', app()->getLocale()) }}">{{ __('messages.balance inquiry') }}</a>
                 </div>
                 <div class="col-md-6">
                     <a class="btn btn-outline-light btn-lg" style="width: 100%" role="button"
+                       data-bs-toggle="tooltip" data-bs-placement="right" title="{{ __('messages.tooltip settings') }}"
                        href="{{ route('account-settings', app()->getLocale()) }}">{{ __('messages.account settings') }}</a>
                 </div>
                 <div class="col-md-6">
                     <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="modal"
+                            data-bs-toggle="tooltip" data-bs-placement="right" title="{{ __('messages.tooltip logout') }}"
                             data-bs-target="#logout_modal" style="width: 100%">{{ __('messages.logout') }}</button>
                 </div>
             </div>

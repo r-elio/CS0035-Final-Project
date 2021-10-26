@@ -145,6 +145,12 @@ return [
     'attributes' => [
         'form.account_id' => __('messages.account number'),
         'form.password' => __('messages.pin'),
+        'form.old_pin' => __('messages.old pin'),
+        'form.new_pin' => __('messages.new pin'),
+        'form.new_pin_confirmation' => __('messages.confirm new pin'),
+        'form.transferee' => __('messages.transferee account'),
+        'form.amount_transfer' => __('messages.amount to transfer'),
+        'form.amount' => __('messages.amount'),
     ],
 
 ];

@@ -26,7 +26,6 @@ class Login extends Component
         ]);
 
         if (!(auth()->attempt($this->form))){
-            $this->form['account_id'] = '';
             $this->form['password'] = '';
             return back()->with('invalid_login', 'invalid_login');
         }
