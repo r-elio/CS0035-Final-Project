@@ -7,7 +7,7 @@ return [
     'about' => 'About',
     'about atm' => 'About ATM',
     'about us' => 'About Us',
-    'about atm content' => "Automated Teller Machine\nAdmin:\n-Add/Remove/Update Accounts\n",
+    'about atm content' => "Automated Teller Machine\nAdmin:\n-Add/Remove/Update Accounts\nUser:\n-Withdraw/Deposit/Transfer/Check Balance\n",
     'about us content' => "Created by:\nRajan Elio, Mark Egana,\nJames De Leon, & Agerico Reyes\nBSCSSE - TN41\n",
     'language' => 'Language',
     'english' => 'English',

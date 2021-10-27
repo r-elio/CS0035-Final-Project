@@ -52,7 +52,7 @@ public class Language implements Serializable {
 		login.put("invalidPasswordTitle","Invalid Password");
 		login.put("aboutATMMessage1","Automated Teller Machine\nAdmin: ");
 		login.put("aboutATMMessage2","\n-Add/Remove/Update Accounts");
-		login.put("aboutATMMessage3","");
+		login.put("aboutATMMessage3","\nUser:\n-Withdraw/Deposit/Transfer/Check Balance\n");
 		login.put("aboutUsMessage","Created by:\nRajan Elio, Mark Egana,\nJames De Leon, & Agerico Reyes\nBSCSSE - TN41\n");
 		login.put("languageMessage","Changing the system language.\nPlease re-open the system.");
 		login.put("languageTitle","Change Language");
@@ -187,7 +187,7 @@ public class Language implements Serializable {
 		login.put("invalidPasswordTitle","Hindi tama ang password.");
 		login.put("aboutATMMessage1","Automated Teller Machine\nTagapangasiwa: ");
 		login.put("aboutATMMessage2","\n-Magdagdag/Magtanggal/Mag-update ng mga Account ");
-		login.put("aboutATMMessage3","");
+		login.put("aboutATMMessage3","\nGumagamit:\n-Maglabas/Magdeposito/Maglipat/Tignan ang Balanse\n");
 		login.put("aboutUsMessage","Ginawa nina: \nRajan Elio, Mark Egana,\nJames De Leon, at Agerico Reyes\nBSCSSE - TN41 \n");
 		login.put("languageMessage","Papalitan ang Wika. \nBuksan muli ang system.");
 		login.put("languageTitle","Palitan ang Wika");
