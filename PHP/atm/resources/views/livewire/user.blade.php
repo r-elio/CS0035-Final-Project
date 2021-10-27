@@ -2,7 +2,7 @@
     <div class="d-sm-flex my-3 justify-content-center align-items-center">
         <h2 class="fw-bold mb-3 text-uppercase">{{ __('messages.services title') }}</h2>
     </div>
-    <div class="card bg-dark text-white" style="border-radius: 1rem;">
+    <div class="card bg-dark text-white rounded">
         <div class="card-body p-5">
             <div class="row g-5">
                 <div class="col-md-6">

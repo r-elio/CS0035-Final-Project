@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom">
     <div class="container-fluid">
         <a class="navbar-brand" href="
         @if(auth()->check())
@@ -49,6 +49,10 @@
                 @endguest
                 @auth
                     @if(auth()->user()->is_admin)
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#add_account">{{ __('messages.add account') }}</button>
+                            </li>
                         <li class="nav-item dropdown">
                             <button class="btn btn-dark" type="button" data-bs-toggle="modal"
                                     data-bs-target="#logout_modal">{{ __('messages.logout') }}</button>

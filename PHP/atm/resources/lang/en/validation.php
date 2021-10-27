@@ -162,6 +162,8 @@ return [
         'form.transferee' => __('messages.transferee account'),
         'form.amount_transfer' => __('messages.amount to transfer'),
         'form.amount' => __('messages.amount'),
+        'form.name' => __('messages.name'),
+        'form.balance' => __('messages.balance'),
     ],
 
 ];

@@ -15,7 +15,7 @@
                 <div class="mb-4 px-5">
                     <div class="input-group input-group-lg">
                         <span class="input-group-text">{{ __('messages.amount to transfer') }}</span>
-                        <input wire:model="form.amount_transfer" type="number" min="1" class="form-control">
+                        <input wire:model="form.amount_transfer" type="text" class="form-control">
                     </div>
                     @error('form.amount_transfer')<p class="text-danger text-center mt-2">{{ $message }}</p>@enderror
                 </div>

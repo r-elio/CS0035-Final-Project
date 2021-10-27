@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Livewire\AccountSettings;
 use App\Http\Livewire\Admin;
@@ -34,4 +35,7 @@ Route::group(['prefix' => '{language}'], function () {
     Route::get('/user/transfer', TransferFunds::class)->name('transfer-funds')->middleware('auth');
     Route::get('/user/balance', BalanceInquiry::class)->name('balance-inquiry')->middleware('auth');
     Route::get('/user/settings', AccountSettings::class)->name('account-settings')->middleware('auth');
+    Route::post('/admin/add', [AccountController::class, 'add_account'])->name('admin.add')->middleware(['auth', 'is_admin']);
+    Route::post('/admin/update/{user}', [AccountController::class, 'update_account'])->name('admin.update')->middleware(['auth', 'is_admin']);
+    Route::delete('/admin/remove/{user}',[AccountController::class, 'remove_account'])->name('admin.remove')->middleware(['auth', 'is_admin']);
 });
