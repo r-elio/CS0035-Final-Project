@@ -111,7 +111,7 @@ public class AdminFrame extends JFrame {
 		
 		menuBar.add(fileMenu);
 		
-		setMenuBar(menuBar);
+		//setMenuBar(menuBar);
 		
 		addButton = new JButton(lang.admin.get("addButton"));
 		removeButton = new JButton(lang.admin.get("removeButton"));
