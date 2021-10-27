@@ -85,7 +85,7 @@ public class Language implements Serializable {
 		admin.put("invalidBalanceTitle","Invalid Balance");
 		admin.put("updateQuestion","Do you want to update account: ");
 		admin.put("updateMessage","Account Updated!");
-		admin.put("removeQuestion","Do you want to remove selected account/s?");
+		admin.put("removeQuestion","Do you want to remove selected account?");
 		admin.put("removeMessage","Account/s Removed!");
 		admin.put("saveQuestion","Do you want to save changes?");
 		admin.put("saveMessage","Changes Saved!");
@@ -220,8 +220,8 @@ public class Language implements Serializable {
 		admin.put("invalidBalanceTitle","Hindi tama ang Balanse");
 		admin.put("updateQuestion","Gusto mo bang i-update ang account: ");
 		admin.put("updateMessage","Na-update na ang account!");
-		admin.put("removeQuestion","Gusto mo bang tanggalin ang mga napiling account?");
-		admin.put("removeMessage","Natanggal na ang mga account!");
+		admin.put("removeQuestion","Gusto mo bang tanggalin ang napiling account?");
+		admin.put("removeMessage","Natanggal na ang account!");
 		admin.put("saveQuestion","Gusto mo bang mai-save ang mga binago?");
 		admin.put("saveMessage","Na i-save na ang mga binago!");
 		admin.put("invalidFileMessage","Hindi nakamit ng File ang kailangang format.");
